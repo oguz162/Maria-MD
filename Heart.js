@@ -1372,13 +1372,13 @@ break;
 
 case 'play':  case 'song': {
 Maria.sendMessage(from, { react: { text: "📥", key: m.key }}) 
-if (!text) return reply(`🍭𝑷𝒍𝒆𝒂𝒔𝒆 𝒎𝒆𝒏𝒕𝒊𝒐𝒏 𝒂 𝒔𝒐𝒏𝒈 𝒏𝒂𝒎𝒆 𝒅𝒂𝒓𝒍𝒊𝒏𝒈 \n\n 𝑬𝒙𝒂𝒎𝒑𝒍𝒆: ${prefix + command}  𝒂𝒏𝒊𝒎𝒆 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝒔𝒕𝒂𝒕𝒖𝒔`)
+if (!text) return reply(`🍭Lütfen şarkı ismi yazınız efendim \n\n 𝑬𝒙𝒂𝒎𝒑𝒍𝒆: ${prefix + command}  sezen aksu zalim`)
 const Ayushplaymp3 = require('./Gallery/lib/ytdl2')
 let yts = require("youtube-yts")
         let search = await yts(text)
         let anup3k = search.videos[0]
 const pl= await Ayushplaymp3.mp3(anup3k.url);
-reply('```✅ Song found! Sending...```');
+reply('```✅ Şarkı bulundu yükleniyor...```');
 await Maria.sendMessage(m.chat,{
     audio: fs.readFileSync(pl.path),
     fileName: anup3k.title + '.mp3',
@@ -1415,9 +1415,9 @@ await Maria.sendMessage(m.chat,{
 break;
 ///////////////////////////////////////////////////
 
-case 'chatgpt': case 'gpt':{
+case 'chatgpt': case 'alpha':{
 Maria.sendMessage(from, { react: { text: "🤖", key: m.key }}) 
-              if (!q) return reply(`Please provide a text query. Example: ${prefix + command} Hello, ChatGPT!`);
+              if (!q) return reply(`Lütfen benimle iletişime geç. Example: ${prefix + command} Merhaba!`);
             
               const apiUrl1 = `https://vihangayt.me/tools/chatgpt?q=${encodeURIComponent(q)}`;
               const apiUrl2 = `https://gurugpt.cyclic.app/gpt4?prompt=${encodeURIComponent(q)}&model=llama`;
@@ -1443,19 +1443,19 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
                     const me = m.sender;
                     await Maria.sendMessage(m.chat, { text: message, mentions: [me] }, { quoted: m });
                   } else {
-                    reply("Sorry, I couldn't fetch a response from both APIs at the moment.");
+                    reply("Üzgünüm, şu anda her iki API'den de yanıt alamadım.");
                   }
                 }
               } catch (error) {
                 console.error(error);
-                reply("An error occurred while fetching the response from both APIs.");
+                reply("Her iki API'den de yanıt alınırken bir hata oluştu.");
               }
             }
               break;
              case 'dalle': {
        
 
-        if (!q) return reply(`Please provide a query to generate an image. Example: ${prefix + command} Beautiful landscape`);
+        if (!q) return reply(`Lütfen resim oluşturmak için bir sorgu girin. Örnek: ${prefix + command} Beautiful landscape`);
 
         const apiUrl = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(q)}`;
 
@@ -1463,7 +1463,7 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
           await Maria.sendMessage(m.chat, { image: { url: apiUrl } }, { quoted: m });
         } catch (error) {
           console.error(error);
-          reply("An error occurred while generating the image.");
+          reply("Görüntü oluşturulurken bir hata oluştu.");
         }
       }
         break;
@@ -1473,7 +1473,7 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
 //////////////////////////////
             case "rules":
       
-        const helptxt = `_*📍[Rules for Maria Md usage]📍*_\n\n\n*>>>* use ${prefix}support to get the Official group link in your dm.\n\n*--->* If you want to add Maria-Md in your group the contact the owner by *${prefix}owner/${prefix}mods* \n\n*--->* Dont use wrong command, use the command given in the *${prefix}help* list \n\n* Dont spam the bot with commands if Maria-Md is not responding, its means the maybe owner is offline or facing internet issue. \n\n*IF YOU DONT FOLLOW THE RULES THEN YOU WILL BE BANNED* 🚫 \n\n\n*©️ Ayush Bots inc* `
+        const helptxt = `...`
 
         Maria.sendMessage(from, { video: { url: 'https://c.tenor.com/geMdtLCXZkAAAAPo/rules.mp4' }, gifPlayback: true, caption: helptxt }, { quoted: m })
 
@@ -1481,16 +1481,14 @@ Maria.sendMessage(from, { react: { text: "🤖", key: m.key }})
       case 'hii': case 'hi': case 'Hi':
        
         
-        let txxt = `*U^I^U ♡* Konichiwa ${pushname} Senpai, I'm MARIA-MD Created by
-
- *_Team Ayush_*.`
+        let txxt = `*U^I^U ♡*`
 
         Maria.sendMessage(m.chat, { image: { url: "https://graph.org/file/eb3821e4d2b0a54dd7ea6.jpg" }, caption: txxt}, { quoted: m });
         
         break;
       case "support":
      
-        let tex = `  [🎀𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋🎀]\n\n🔖_https://chat.whatsapp.com/FGPKxVnjgJ7KnBGiDeb4ij_`
+        let tex = `...`
 
         await Maria.sendMessage(m.sender,{ video: {url: "https://media.tenor.com/q5Lo2BINkaUAAAPo/beast-tamer-kanade.mp4"}, caption: `${tex}`,gifPlayback: true},);
 
@@ -1535,10 +1533,10 @@ Maria.sendMessage(m.chat, { image: { url: "https://graph.org/file/c8ad7dc322c0b9
 
 
 case 'wanumber': case 'nowa': case 'searchnumber':{
-           	if (!text) return reply(`📵🔢 Enter a number ending with 'x'\n\nExample: ${prefix + command} 9199311223xx`)
+           	if (!text) return reply(`📵🔢 Lütfen numarayı girin \n\nExample: ${prefix + command} 9053594166xx`)
 var inputnumber = text.split(" ")[0]
         
-        reply(`📱🔍 Exploring for WhatsApp accounts within the range...`)
+        reply(`📱🔍 Aranıyor...`)
         function countInstances(string, word) {
             return string.split(word).length - 1
         }
@@ -1597,7 +1595,7 @@ case 'dare':
        
 	                if (!m.isGroup) return reply(mess.group)
                    const dare =[
-"eat 2 tablespoons of rice without any side dishes, if it's dragging you can drink",
+         "eat 2 tablespoons of rice without any side dishes, if it's dragging you can drink",
          "spill people who make you pause",
          "call crush/pickle now and send ss",
          "drop only emote every time you type on gc/pc for 1 day.",
