@@ -211,7 +211,7 @@ async function obfus(query) {
 
 async function Telesticker(url) {
     return new Promise(async (resolve, reject) => {
-        if (!url.match(/(https:\/\/t.me\/addstickers\/)/gi)) return reply('Enter your url telegram sticker link')
+        if (!url.match(/(https:\/\/t.me\/addstickers\/)/gi)) return reply('Lütfen bir telegram stiker linki giriniz')
         packName = url.replace("https://t.me/addstickers/", "")
         data = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=${encodeURIComponent(packName)}`, {method: "GET",headers: {"User-Agent": "GoogleBot"}})
         const mariayresult = []
@@ -262,7 +262,7 @@ async function Telesticker(url) {
         }
         
         if (autobio) {
-            Maria.updateProfileStatus(`Hey, future leaders! 🌟 Maria-Md is here to inspire and lead, thanks to Ayush Botz, Inc. 🚀 ${runtime(process.uptime())} `).catch(_ => _)
+            Maria.updateProfileStatus(`hayatımın hatası yazılım. 🚀 ${runtime(process.uptime())} `).catch(_ => _)
         }
         if (m.sender.startsWith('212') && global.anti212 === true) {
             return Maria.updateBlockStatus(m.sender, 'block')
@@ -1105,7 +1105,7 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
                                 case 'sticker':
             case 'stiker':
             case 's': {
-                if (!quoted) return reply(` Reply to Video/Image with Caption ${prefix + command} darling`)
+                if (!quoted) return reply(` bir fotoğraf/video etiketle ${prefix + command}`)
                 if (/image/.test(mime)) {
                     let media = await quoted.download()
                     let encmedia = await Maria.sendImageAsSticker(m.chat, media, m, {
@@ -1114,7 +1114,7 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
                     })
                     await fs.unlinkSync(encmedia)
                 } else if (isVideo || /video/.test(mime)) {
-                    if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 seconds!')
+                    if ((quoted.msg || quoted).seconds > 11) return reply('Maksimum 10 saniye!')
                     let media = await quoted.download()
                     let encmedia = await Maria.sendVideoAsSticker(m.chat, media, m, {
                         packname: global.stickername,
@@ -1122,12 +1122,12 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
                     })
                     await fs.unlinkSync(encmedia)
                 } else {
-                    return reply(` 🍭𝑹𝒆𝒑𝒍𝒚 𝒕𝒐 𝑽𝒊𝒅𝒆𝒐/𝑰𝒎𝒂𝒈𝒆 𝑾𝒊𝒕𝒉 𝑪𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} 𝒅𝒂𝒓𝒍𝒊𝒏𝒈`)
+                    return reply(` bir fotoğraf/video etiketle ${prefix + command}`)
                 }
             }
             break;
             case 'smeme': {
-                let respond = `Send/Reply image/sticker with caption ${prefix + command} text1|text2`
+                let respond = `bir fotoğraf/sticker etiketle ${prefix + command} text1|text2`
                 if (!/image/.test(mime)) return reply(respond)
                 if (!text) return reply(respond)
                 reply(mess.wait)
@@ -1144,7 +1144,7 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
             }
             break;
 case 'swm': case 'stickerwm': case 'take':{
-if (!args.join(" ")) return reply(`Where is the text?`)
+if (!args.join(" ")) return reply(`Metin nerede ?`)
 const swn = args.join(" ")
 const pcknm = swn.split("|")[0]
 const atnm = swn.split("|")[1]
@@ -1155,7 +1155,7 @@ Maria.sendMessage(from, {sticker:fs.readFileSync("gifee.webp")},{quoted:m})
 let media = await quoted.download()
 let encmedia = await Maria.sendImageAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
 } else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 11) return reply('Maximum 10 Seconds!')
+if ((quoted.msg || quoted).seconds > 11) return reply('Maksimum 10 Saniye!')
 let media = await quoted.download()
 let encmedia = await Maria.sendVideoAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
 } else {
@@ -1165,7 +1165,7 @@ reply(`Photo/Video?`)
 break;
             case 'toimage':
             case 'toimg': {
-                if (!/webp/.test(mime)) return reply(`🍭𝑹𝒆𝒑𝒍𝒚 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒘𝒊𝒕𝒉 𝒄𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} 𝑫𝒂𝒓𝒍𝒊𝒏𝒈`)
+                if (!/webp/.test(mime)) return reply(`bir Sticker etiketle ${prefix + command}`)
                 reply(mess.wait)
                 let media = await Maria.downloadAndSaveMediaMessage(qmsg)
                 let ran = await getRandom('.png')
@@ -1185,14 +1185,14 @@ break;
             break;
             case 'tomp4':
             case 'tovideo': {
-                if (!/webp/.test(mime)) return reply(`🍭𝑹𝒆𝒑𝒍𝒚 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒘𝒊𝒕𝒉 𝒄𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} 𝑫𝒂𝒓𝒍𝒊𝒏𝒈`)
+                if (!/webp/.test(mime)) return reply(`bir Sticker etiketle ${prefix + command}`)
                 reply(mess.wait)
                 let media = await Maria.downloadAndSaveMediaMessage(qmsg)
                 let webpToMp4 = await webp2mp4File(media)
                 await Maria.sendMessage(m.chat, {
                     video: {
                         url: webpToMp4.result,
-                        caption: 'Convert Webp To Video'
+                        caption: 'Dönüştürülüyor...'
                     }
                 }, {
                     quoted: m
@@ -1202,9 +1202,9 @@ break;
             }
             break;
             case 'checkdeath':
-             if (!text) return replay(`Use Someone's Name, Example : ${prefix + command} Ayush`)
+             if (!text) return replay(`Bir isim yaz : ${prefix + command} Oğuz`)
               predea = await axios.get(`https://api.agify.io/?name=${q}`)
-              reply(`Name : ${predea.data.name}\n*Dead At Age :* ${predea.data.age} Year.\n\n_Quick, Quick, Repent Bro, Because No One Knows About Death_`)
+              reply(`Name : ${predea.data.name}\n*Bu yaşta öldü :* ${predea.data.age} Year.\n\n_Quick, Quick, Repent Bro, Because No One Knows About Death_`)
               break;
             case 'tomp3': {
                 if (!/video/.test(mime) && !/audio/.test(mime)) return reply(`Send/Reply Video/Audio that you want to make into MP3 with caption ${prefix + command}`)
@@ -1274,8 +1274,8 @@ break;
             break;
             case 'emojimix': {
                 let [emoji1, emoji2] = text.split`+`
-                if (!emoji1) return reply(`Example : ${prefix + command} 😅+🤔`)
-                if (!emoji2) return reply(`Example : ${prefix + command} 😅+🤔`)
+                if (!emoji1) return reply(`Örnek : ${prefix + command} 😅+🤔`)
+                if (!emoji2) return reply(`Örnek : ${prefix + command} 😅+🤔`)
                 reply(mess.wait)
                 let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
                 for (let res of anu.results) {
@@ -1290,14 +1290,14 @@ break;
             break;
             case 'toonce':
             case 'toviewonce': {
-                if (!quoted) return reply(`Reply Image/Video`)
+                if (!quoted) return reply(`Resmi/Videoyu yantla`)
                 if (/image/.test(mime)) {
                     anuan = await Maria.downloadAndSaveMediaMessage(quoted)
                     Maria.sendMessage(m.chat, {
                         image: {
                             url: anuan
                         },
-                        caption: `Here you go!`,
+                        caption: `İşlem tamamlandı!`,
                         fileLength: "999",
                         viewOnce: true
                     }, {
@@ -1309,7 +1309,7 @@ break;
                         video: {
                             url: anuanuan
                         },
-                        caption: `Here you go!`,
+                        caption: `İşlem tamamlandı!`,
                         fileLength: "99999999",
                         viewOnce: true
                     }, {
@@ -1319,7 +1319,7 @@ break;
             }
             break;
             case 'toqr': {
-                if (!q) return reply(' Please include link or text!')
+                if (!q) return reply('Lütfen bağlantı yada Metin ekleyin!')
                 const QrCode = require('qrcode-reader')
                 const qrcode = require('qrcode')
                 let qyuer = await qrcode.toDataURL(q, {
@@ -1331,7 +1331,7 @@ break;
                 let medi = fs.readFileSync('./' + buff)
                 await Maria.sendMessage(from, {
                     image: medi,
-                    caption: "Here you go!"
+                    caption: "İşlem tamamlandı!"
                 }, {
                     quoted: m
                 })
@@ -1341,19 +1341,19 @@ break;
             }
             break;
             case 'fliptext': {
-                if (args.length < 1) return reply(`Example:\n${prefix}fliptext Ayushy`)
+                if (args.length < 1) return reply(`Example:\n${prefix}fliptext Zlose`)
                 quere = args.join(" ")
                 flipe = quere.split('').reverse().join('')
-                reply(`\`\`\`「 FLIP TEXT 」\`\`\`\n*•> Normal :*\n${quere}\n*•> Flip :*\n${flipe}`)
+                reply(`\`\`\`「 TAMAMLADI 」\`\`\`\n*•> Normal :*\n${quere}\n*•> Flip :*\n${flipe}`)
             }
             break;
 
             case 'afk':
                 if (!m.isGroup) return reply(mess.group)
-                if (isAfkOn) return reply("Already afk")
-                let reason = text ? text : 'Nothing.'
+                if (isAfkOn) return reply("Zaten afk aktif")
+                let reason = text ? text : 'Uyuyorum.'
                 afk.addAfkUser(m.sender, Date.now(), reason, _afk)
-                reply(`@${m.sender.split('@')[0]} Currently AFK\nWith reason : ${reason}`)
+                reply(`@${m.sender.split('@')[0]} şuan AFK' yım\nSebeb : ${reason}`)
                 break;
       case 'qc': {
                 const {
