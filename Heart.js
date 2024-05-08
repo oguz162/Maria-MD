@@ -1949,23 +1949,21 @@ break;
                          
                            
   case 'menu': case 'help': case 'h': 
-      const txt = `╭─「 *Konichiwa* 」
-│⋊ 𝕌𝕤𝕖𝕣: ${pushname} 
+      const txt = `╭─「 *Merhaba* 」
+│⋊ 𝕂𝕦𝕝𝕝𝕒𝕟ı𝕔ı: ${pushname} 
 │⋊ 𝔹𝕠𝕥:  ${botname}
-│⋊ ℙ𝕣𝕖𝕗𝕚𝕩:  *${prefix}*
-│⋊ 𝔻𝕒𝕥𝕖: ${xdate}
-│⋊ 𝕋𝕚𝕞𝕖:  ${xtime}
-│⋊ 𝕆𝕨𝕟𝕖𝕣: ${ownername}
+│⋊ 𝕆̈𝕟𝕖𝕜:  *${prefix}*
+│⋊ 𝕋𝕒𝕣𝕚𝕙: ${xdate}
+│⋊ 𝕊𝕒𝕒𝕥:  ${xtime}
+│⋊ 𝕊𝕒𝕙𝕚𝕡: ${ownername}
 │⋊ 𝕧𝕖𝕣𝕤𝕚𝕠𝕟: ${mver}
 │⋊ ℍ𝕠𝕤𝕥: ${os.hostname()}
 │⋊ ℙ𝕝𝕒𝕥𝕗𝕠𝕣𝕞: ${os.platform()} 
-│⋊ ℝ𝕦𝕟𝕥𝕚𝕞𝕖: ${runtime(process.uptime())}
-│⋊ 𝕋𝕠𝕥𝕒𝕝𝕔𝕞𝕕: ${mariafeature()}
-│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://gg.gg/Maria-support
+│⋊ 𝔸𝕜𝕥𝕚𝕗𝕝𝕚𝕜: ${runtime(process.uptime())}
+│⋊ 𝕋𝕠𝕡𝕝𝕒𝕞 𝕔𝕞𝕕: ${mariafeature()}
 ╰────────────┈平和
- 🎀𝐅𝐨𝐥𝐥𝐨𝐰 𝐨𝐧: https://www.instagram.com/ayushpandeyy_023
 
-Here's the list of my Commands.🔖
+Komutların listesi.🔖
 ${readmore}
 ┌──⊰ _*🧧GENERAL🧧*_
 │⊳ 🌿 ${prefix}hi
@@ -1980,18 +1978,18 @@ ${readmore}
 │⊳ 🌿 ${prefix}owner
 │⊳ 🌿 ${prefix}script
 └──────────⊰
-┌──⊰ _*🎓Education🎓*_
+┌──⊰ _*🎓TEST🎓*_
 │⊳ 📚 ${prefix}element 
 │⊳ 📚 ${prefix}calculator 
 │⊳ 📚 ${prefix}sciencefact
 │⊳ 📚 ${prefix}sciencenews
 └──────────⊰
-┌──⊰ _*💻Coding💻*_
+┌──⊰ _*💻KODLAMA💻*_
 │⊳ 🌀${prefix}exec
 │⊳ 🌀${prefix}run
 │⊳ 🌀${prefix}gitclone
 └──────────⊰
-┌──⊰ _*🧩OWNER🧩*_
+┌──⊰ _*🧩SAHİP🧩*_
 │⊳ ♠️ ${prefix}session
 │⊳ ♠️ ${prefix}join
 │⊳ ♠️ ${prefix}mode *[self/public]*
@@ -2011,7 +2009,7 @@ ${readmore}
 │⊳ ♠️ ${prefix}getcase
 │⊳ ♠️ ${prefix}creategc
 └──────────⊰
-┌──⊰ _*👮🏻‍♂️GROUP👮🏻‍♂️*_
+┌──⊰ _*👮🏻‍♂️GRUP👮🏻‍♂️*_
 │⊳ 🍁 ${prefix}antilink
 │⊳ 🍁 ${prefix}closetime
 │⊳ 🍁 ${prefix}opentime
@@ -2029,7 +2027,7 @@ ${readmore}
 │⊳ 🍁 ${prefix}revoke
 │⊳ 🍁 ${prefix}listonline
 └──────────⊰
-┌──⊰ _*🎉FUN🎉*_
+┌──⊰ _*🎉EĞLENCE🎉*_
 │⊳🎟️ ${prefix}truth
 │⊳🎟️ ${prefix}dare
 │⊳🎟️ ${prefix}couple 
@@ -2061,12 +2059,12 @@ ${readmore}
 │⊳ 📥 ${prefix}pinterest
 │⊳ 📥 ${prefix}apk
 └──────────⊰
-┌──⊰ _*✨️WALLPAPER✨️*_
+┌──⊰ _*✨️DUVAR KAĞIDI✨️*_
 │⊳ 🎴 ${prefix}Doraemon
 │⊳ 🎴 ${prefix}pokemon 
 │⊳ 🎴 ${prefix}zero-two 
 └──────────⊰
-┌──⊰ _*🎐SnapBlend🎐*_
+┌──⊰ _*🎐TTP🎐*_
 │⊳🎀 ${prefix}shadow
 │⊳🎀 ${prefix}write
 │⊳🎀 ${prefix}smoke
@@ -2083,7 +2081,7 @@ ${readmore}
 │⊳🎀 ${prefix}narutobanner
 │⊳🎀 ${prefix}shinetext
 └──────────⊰
-┌──⊰ _*⛩️OTHERS⛩️*_
+┌──⊰ _*⛩️ARAÇLAR⛩️*_
 │⊳ 🏮 ${prefix}sticker
 │⊳ 🏮 ${prefix}qc
 │⊳ 🏮 ${prefix}smeme
@@ -2108,7 +2106,7 @@ ${readmore}
 │⊳ 🏮 ${prefix}tts
 │⊳ 🏮 ${prefix}obfuscate
 └──────────⊰
-┌──⊰ _*🃏Games🃏*_
+┌──⊰ _*🃏OYUNLAR🃏*_
 │⊳ 🎰 ${prefix}slot
 │⊳ 🎰 ${prefix}poker
 │⊳ 🎰 ${prefix}dice
@@ -2118,11 +2116,8 @@ ${readmore}
 │⊳ 🎰 ${prefix}roulette
 │⊳ 🎰 ${prefix}blackjack
 │⊳ 🎰 ${prefix}compliment
-└──────────⊰
+└──────────⊰`
 
-🍂 To enable NSFW (Admin only!), enter  *${prefix}nsfw* 
-
-🍂 Obtain the full list of NSFW commands by typing  *${prefix}nsfwmenu*`
 
   if (randomImage) {
     Maria.sendMessage(from, { image: { url: randomImage }, caption: txt }, { quoted: m });
