@@ -45,9 +45,9 @@ let hit = JSON.parse(fs.readFileSync('./Gallery/database/total-hit-user.json'))
 const replay = (teks) => {
             Maria.sendMessage(m.chat, { text: teks}, { quoted: m})
         }
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-        const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+const xtime = moment.tz('Europe/Istanbul').format('HH:mm:ss')
+        const xdate = moment.tz('Europe/Istanbul').format('DD/MM/YYYY')
+        const time2 = moment().tz('Europe/Istanbul').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
 var Ayushytimewisher = `Good Night 🌌`
  }
