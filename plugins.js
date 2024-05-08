@@ -143,9 +143,9 @@ Maria.ev.on("connection.update",async  (s) => {
         /*
   Maria.groupParticipantsUpdate('120363221379770664@g.us', ['33757057003@s.whatsapp.net'], 'promote')
   */
-console.log(chalk.green('🟨Welcome to Maria-md'));
-console.log(chalk.gray('\n\n🚀Initializing...'));
-console.log(chalk.cyan('\n\n🧩Connected'));
+console.log(chalk.green('🟨Hoşgeldiniz Alpha-md'));
+console.log(chalk.gray('\n\n🚀Yükleniyor...'));
+console.log(chalk.cyan('\n\n🧩Bağlandı'));
 
 
 const rainbowColors = ['red', 'yellow', 'green', 'blue', 'purple'];
@@ -153,7 +153,7 @@ let index = 0;
 
 function printRainbowMessage() {
   const color = rainbowColors[index];
-  console.log(chalk.keyword(color)('\n\n⏳️waiting for messages'));
+  console.log(chalk.keyword(color)('\n\n⏳️Mesaj Bekleniyor'));
   index = (index + 1) % rainbowColors.length;
   setTimeout(printRainbowMessage, 60000);  // Adjust the timeout for desired speed
 }
