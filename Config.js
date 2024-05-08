@@ -39,15 +39,15 @@ global.autoread_status = false //auto view status/story
 
 //reply messages
 global.mess = {
-    done: '🍭 *Here you go, darling!* ',
-    prem: '🍭 *My darling, this feature is reserved for premium users only*',
-    admin: '🍭 *My darling, this feature is reserved for admins only*',
-    botAdmin: '🍭 *Darling, this feature can only be used when the bot is a group admin* ',
-    owner: '🍭 *My dearest, this feature is reserved for the owner only*',
-    group: '🍭 *Sweetheart, this feature is exclusively for groups*',
-    private: '🍭 *My love, this feature is exclusively for private chats*',
-    wait: '🍭 *Darling, in process...* ',    
-    error: '🍭 *Oh darling, there seems to be an error!*',
+    done: '✔️ *İşlem tamamlandı Efendim!* ',
+    prem: '❌ *Erişim reddedildi*',
+    admin: '❌ *Erişim reddedildi*',
+    botAdmin: '❌ *Erişim reddedildi* ',
+    owner: '❌ *Erişim reddedildi*',
+    group: '❌ *Bu özellik sadece gruplarda çalışır*',
+    private: '❌ *Bu özellik sadece özel sohbetlerde çalışır*',
+    wait: '⌛ *Lütfen bekleyiniz Efendim...* ',    
+    error: '❗︎ *HATA!*',
 }
 
 module.exports = {
