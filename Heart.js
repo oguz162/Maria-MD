@@ -32,7 +32,7 @@ let afk = require("./Gallery/lib/afk");
 const { fetchBuffer, buffergif } = require("./Gallery/lib/myfunc2")
 
 /////log
- global.modnumber = '919060791616' 
+ global.modnumber = '905516491871' 
 //Gallery/database
 let ntilinkall =JSON.parse(fs.readFileSync('./Gallery/database/antilink.json'));
 // let autoblck =JSON.parse(fs.readFileSync('./Gallery/database/autoblock.json'));
@@ -49,22 +49,22 @@ const xtime = moment.tz('Europe/Istanbul').format('HH:mm:ss')
         const xdate = moment.tz('Europe/Istanbul').format('DD/MM/YYYY')
         const time2 = moment().tz('Europe/Istanbul').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
-var Ayushytimewisher = `Good Night 🌌`
+var Ayushytimewisher = `İyi Geceler 🌌`
  }
  if(time2 < "19:00:00"){
-var Ayushytimewisher = `Good Evening 🌃`
+var Ayushytimewisher = `İyi Akşamlar 🌃`
  }
  if(time2 < "18:00:00"){
-var Ayushytimewisher = `Good Evening 🌃`
+var Ayushytimewisher = `İyi Akşamlar 🌃`
  }
  if(time2 < "15:00:00"){
-var Ayushytimewisher = `Good Afternoon 🌅`
+var Ayushytimewisher = `İyi Öğlenler 🌅`
  }
  if(time2 < "11:00:00"){
-var Ayushytimewisher = `Good Morning 🌄`
+var Ayushytimewisher = `Günaydın 🌄`
  }
  if(time2 < "05:00:00"){
-var Ayushytimewisher = `Good Morning 🌄`
+var Ayushytimewisher = `Günaydın 🌄`
  } 
 module.exports = Maria = async (Maria, m, msg, chatUpdate, store) => {
     try {
@@ -173,7 +173,7 @@ isForwarded: true,
 "body": `${ownername}`,
 "previewType": "PHOTO",
 "thumbnailUrl": ``,
-"thumbnail": fs.readFileSync(`./Gallery/thumb.jpg`),
+"thumbnail": fs.readFileSync(`./Gallery/ai-generated-8015426_1280.jpg`),
 "sourceUrl": `${link}`}}},
 { quoted: m})
 }
@@ -211,7 +211,7 @@ async function obfus(query) {
 
 async function Telesticker(url) {
     return new Promise(async (resolve, reject) => {
-        if (!url.match(/(https:\/\/t.me\/addstickers\/)/gi)) return reply('Lütfen bir telegram stiker linki giriniz')
+        if (!url.match(/(https:\/\/t.me\/addstickers\/)/gi)) return reply('Lütfen bir telegram sticker linki giriniz')
         packName = url.replace("https://t.me/addstickers/", "")
         data = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=${encodeURIComponent(packName)}`, {method: "GET",headers: {"User-Agent": "GoogleBot"}})
         const mariayresult = []
@@ -612,7 +612,7 @@ break;
 
             case 'shutdown': {
                 if (!isCreator) return reply(mess.owner)
-                reply(`♠️Goodbye........`)
+                reply(`♠️Bay Bay........`)
                 await sleep(3000)
                 process.exit()
                 }
@@ -620,8 +620,8 @@ break;
                 
             case 'restart': {
                 if (!isCreator) return reply(mess.owner)
-                reply('In Process....')
-                exec('pm2 restart all')
+                reply('Komut alındı server yanıtı bekleniyor....')
+                exec('Yeniden başlatma işlemi onaylandı lütfen bekleyiniz')
                 }
                 break;
                 
@@ -630,10 +630,10 @@ break;
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q === 'on') {
                     autoread = true
-                    reply(`Successfully changed autoread to ${q}`)
+                    reply(`Otomotik okuma AÇIK ${q}`)
                 } else if (q === 'off') {
                     autoread = false
-                    reply(`Successfully changed autoread to ${q}`)
+                    reply(`Otomatik okuma KAPALI ${q}`)
                 }
                 }
                 break;
@@ -643,10 +643,10 @@ break;
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q === 'on') {
                     autoTyping = true
-                    reply(`Successfully changed auto-typing to ${q}`)
+                    reply(`Otomatik yazma AÇIK ${q}`)
                 } else if (q === 'off') {
                     autoTyping = false
-                    reply(`Successfully changed auto-typing to ${q}`)
+                    reply(`Otomatik yazma KAPALI ${q}`)
                 }
                 }
                 break;
@@ -656,10 +656,10 @@ break;
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q === 'on') {
                     autoRecording = true
-                    reply(`Successfully changed auto-recording to ${q}`)
+                    reply(`Otomatik kayıt AÇIK ${q}`)
                 } else if (q === 'off') {
                     autoRecording = false
-                    reply(`Successfully changed auto-recording to ${q}`)
+                    reply(`Otomatik kayıt KAPALI ${q}`)
                 }
                 }
                 break;
@@ -669,10 +669,10 @@ break;
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q === 'on') {
                     autorecordtype = true
-                    reply(`Successfully changed auto recording and typing to ${q}`)
+                    reply(`Otomtik kayıt AÇIK ${q}`)
                 } else if (q === 'off') {
                     autorecordtype = false
-                    reply(`Successfully changed auto recording and typing to ${q}`)
+                    reply(`Otomatik kayıt KAPALI ${q}`)
                 }
                 }
                 break;
@@ -682,10 +682,10 @@ break;
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q === 'on') {
                     autoread_status = true
-                    reply(`🟨Successfully changed auto status/story view to ${q}`)
+                    reply(`🟨 Otomatik Hikaye/Durum görünteliyici AÇIK ${q}`)
                 } else if (q === 'off') {
                     autoread_status = false
-                    reply(`🟨Successfully changed auto status/story view to ${q}`)
+                    reply(`🟨 Otomatik Hikaye/Durum görünteliyici KAPALI ${q}`)
                 }
                 }
                 break;
@@ -695,17 +695,17 @@ break;
                 if (args.length < 1) return reply(`Example ${prefix + command} on/off`)
                 if (q == 'on') {
                     autobio = true
-                    reply(`🟨Successfully Changed AutoBio To ${q}`)
+                    reply(`🟨 Oto Bio AÇIK ${q}`)
                 } else if (q == 'off') {
                     autobio = false
-                    reply(`🟨Successfully Changed AutoBio To ${q}`)
+                    reply(`🟨 Oto Bio KAPALI ${q}`)
                 }
                 }
                 break;
                 
             case 'mode': {
                 if (!isCreator) return reply(mess.owner)
-                if (args.length < 1) return reply(`📑 Check out this example: ${prefix + command} in public/self`)
+                if (args.length < 1) return reply(`📑 Örnek: ${prefix + command} public/self`)
                 if (q == 'public') {
                     Maria.public = true
                     reply(mess.done)
@@ -721,7 +721,7 @@ break;
                 if (!text) return reply(`Example : ${prefix + command} packname|author`)
                 global.packname = text.split("|")[0]
                 global.author = text.split("|")[1]
-                reply(`Exif successfully changed to\n\n• Packname : ${global.packname}\n• Author : ${global.author}`)
+                reply(`Exif düzenlendi \n\n• Paket Adı: ${global.packname}\n• Yazar: ${global.author}`)
                 }
                 break;
                 
@@ -729,9 +729,9 @@ break;
             case 'setpp':
             case 'setppbot': {
                 if (!isCreator) return reply(mess.owner)
-                if (!quoted) return reply(`Send/Reply Image With Caption ${prefix + command}`)
-                if (!/image/.test(mime)) return reply(`Send/Reply Image With Caption ${prefix + command}`)
-                if (/webp/.test(mime)) return reply(`Send/Reply Image With Caption ${prefix + command}`)
+                if (!quoted) return reply(`Lütfen bir fotoğraf yanıtlayıp tekrar deneyin ${prefix + command}`)
+                if (!/image/.test(mime)) return reply(`Lütfen bir fotoğraf yanıtlayıp tekrar deneyin ${prefix + command}`)
+                if (/webp/.test(mime)) return reply(`Lütfen bir fotoğraf yanıtlayıp tekrar deneyin ${prefix + command}`)
                 var medis = await Maria.downloadAndSaveMediaMessage(quoted, 'ppbot.jpeg')
                 if (args[0] == 'full') {
                     var {
@@ -767,17 +767,17 @@ break;
             case 'block':
                 if (!isCreator) return reply(mess.owner)
                 let blockw = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await Maria.updateBlockStatus(blockw, 'block').then((res) => reply(json(res))).catch((err) => reply(json(err)))
+                await Maria.updateBlockStatus(blockw, 'Engellendin bebek').then((res) => reply(json(res))).catch((err) => reply(json(err)))
                 break;
             case 'unblock':
                 if (!isCreator) return reply(mess.owner)
                 let blockww = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await Maria.updateBlockStatus(blockww, 'unblock').then((res) => reply(json(res))).catch((err) => reply(json(err)))
+                await Maria.updateBlockStatus(blockww, 'Engelin Kaldırıldı bebek').then((res) => reply(json(res))).catch((err) => reply(json(err)))
                 break;
             case 'leave':
                 if (!isCreator) return reply(mess.owner)
                 if (!m.isGroup) return reply(mess.group)
-                reply('🟨Bye Everyone 🥺')
+                reply('🟨Arkadaşlar ben gidiyorum Allaha emanet 👋🏼')
                 await Maria.groupLeave(m.chat)
                 break;
             case 'bcgc':
@@ -787,18 +787,18 @@ break;
                 let getGroups = await Maria.groupFetchAllParticipating()
                 let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
                 let anu = groups.map(v => v.id)
-                reply(`Send Broadcast To ${anu.length} Group Chat, End Time ${anu.length * 1.5} second`)
+                reply(`Yayın mesajı şuraya gönderildi ${anu.length} Grup sohbeti, Bitiş zamanı ${anu.length * 1.5} saniye`)
                 for (let i of anu) {
                     await sleep(2500)
-                    let a = '```' + `\n📒${text}\n\n` + '```' + '\n\n*'
+                    let a = '```' + `\n📒*${text}*\n\n` + '```' + '\n\n'
                     Maria.sendMessage(i, {
                         text: a,
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: ' *🎐Maria Broadcast🎐* ',
+                                title: ' *🎐Alpha yayın mesajı🎐* ',
                                 body: `Sent ${i.length} Group`,
-                                thumbnailUrl: 'https://telegra.ph/file/3fd18ee11521117c7c882.jpg',
+                                thumbnailUrl: 'https://png.pngtree.com/thumb_back/fw800/background/20231122/pngtree-robotic-cat-wallpaper-image_15119737.jpg',
                                 sourceUrl: global.link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -806,7 +806,7 @@ break;
                         }
                     })
                 }
-                reply(`Broadcast Sent !`)
+                reply(`Yayın gönderildi !`)
             }
             break;
             case 'getcase':
@@ -826,7 +826,7 @@ break;
                     id,
                     isBaileys
                 } = m.quoted
-                if (!isBaileys) return reply('The message was not sent by a bot!')
+                if (!isBaileys) return reply('Maalesef bu mesajı silemiyorum!')
                 Maria.sendMessage(m.chat, {
                     delete: {
                         remoteJid: m.chat,
@@ -853,10 +853,10 @@ break;
                 } else {
                     return reply('*Choose:*\nsecond\nminute\nhour\nday\n\n*Example*\n10 second')
                 }
-                reply(`Close time ${q} starting from now`)
+                reply(`Kapalı kalma süresi: ${q}`)
                 setTimeout(() => {
                     var nomor = m.participant
-                    const close = `*Closed* group closed by admin\nnow only admin can send messages`
+                    const close = `*Grup sohbeti KAPALI\nSadece yöneticiler mesaj gönderebilir`
                     Maria.groupSettingUpdate(m.chat, 'announcement')
                     reply(close)
                 }, timer)
@@ -876,10 +876,10 @@ break;
                 } else {
                     return reply('*Choose:*\nsecond\nminute\nhour\nday\n\n*Example*\n10 second')
                 }
-                reply(`Open time ${q} starting from now`)
+                reply(`Açılması için kalan süre ${q} `)
                 setTimeout(() => {
                     var nomor = m.participant
-                    const open = `*Opened* The group is opened by admin\nNow members can send messages`
+                    const open = `Grup sohbeti AÇIK\nTüm üyeler mesaj gönderebilir`
                     Maria.groupSettingUpdate(m.chat, 'not_announcement')
                     reply(open)
                 }, timer)
@@ -889,7 +889,7 @@ break;
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 let blockwww = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await Maria.groupParticipantsUpdate(m.chat, [blockwww], 'remove')
+                await Maria.groupParticipantsUpdate(m.chat, [blockwww], 'bay bay bebek')
                 break;
             case 'add':
                 if (!m.isGroup) return reply(mess.group)
@@ -934,21 +934,21 @@ break;
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 let blockwwwww = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await Maria.groupParticipantsUpdate(m.chat, [blockwwwww], 'promote').then((res) => reply(json(res))).catch((err) => reply(json(err)))
+                await Maria.groupParticipantsUpdate(m.chat, [blockwwwww], 'Artık yöneticisin').then((res) => reply(json(res))).catch((err) => reply(json(err)))
                 break;
             case 'demote':
                 if (!m.isGroup) return reply(mess.group)
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 let blockwwwwwa = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await Maria.groupParticipantsUpdate(m.chat, [blockwwwwwa], 'demote').then((res) => reply(json(res))).catch((err) => reply(json(err)))
+                await Maria.groupParticipantsUpdate(m.chat, [blockwwwwwa], 'Yönetici yetkin geri alındı').then((res) => reply(json(res))).catch((err) => reply(json(err)))
                 break;
             case 'setname':
             case 'setsubject':
                 if (!m.isGroup) return reply(mess.group)
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
-                if (!text) return 'Text ?'
+                if (!text) return 'Metin nerede ?'
                 await Maria.groupUpdateSubject(m.chat, text).then((res) => reply(mess.done)).catch((err) => reply(json(err)))
                 break;
             case 'setdesc':
@@ -956,7 +956,7 @@ break;
                 if (!m.isGroup) return reply(mess.group)
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
-                if (!text) return 'Text ?'
+                if (!text) return 'Metin nerede ?'
                 await Maria.groupUpdateDescription(m.chat, text).then((res) => reply(mess.done)).catch((err) => reply(json(err)))
                 break;
             case 'setppgroup':
@@ -965,9 +965,9 @@ break;
                 if (!m.isGroup) return reply(mess.group)
                 if (!isAdmins) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
-                if (!quoted) return reply(`Send/Reply Image With Caption ${prefix + command}`)
-                if (!/image/.test(mime)) return reply(`Send/Reply Image With Caption ${prefix + command}`)
-                if (/webp/.test(mime)) return reply(`Send/Reply Image With Caption ${prefix + command}`)
+                if (!quoted) return reply(`Lütfen bir fotoğraf yanıtla ${prefix + command}`)
+                if (!/image/.test(mime)) return reply(`Lütfen bir fotoğraf yanıtla ${prefix + command}`)
+                if (/webp/.test(mime)) return reply(`Lütfen bir fotoğraf yanıtla ${prefix + command}`)
                 var medis = await Maria.downloadAndSaveMediaMessage(quoted, 'ppbot.jpeg')
                 if (args[0] == 'full') {
                     var {
@@ -1003,9 +1003,9 @@ case 'tag': case 'tagall': case 'all':{
 
  if (!m.isGroup) return replay(mess.grouponly)
  if (!isAdmins && !isCreator) return replay(mess.useradmin)
- let teks = `🧩𝗧𝗮𝗴𝗮𝗹𝗹🧩
+ let teks = `🧩DUYURU🧩
   
- *Message : ${args.join(" ") ? args.join(" ") : 'no message'}*\n\n`
+ *Mesaj : ${args.join(" ") ? args.join(" ") : 'Mesaj yok'}*\n\n`
  for (let mem of participants) {
  teks += `🔮 @${mem.id.split('@')[0]}\n`
  }
@@ -1018,7 +1018,7 @@ case 'tag': case 'tagall': case 'all':{
                 if (!m.isGroup) return reply(mess.group)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 if (!isAdmins) return reply(mess.admin)
-                if (!m.quoted) return reply(`Reply messages with captions ${prefix + command}`)
+                if (!m.quoted) return reply(`Lütfen bir mesajı yanıtlayıız ${prefix + command}`)
                 Maria.sendMessage(m.chat, {
                     forward: m.quoted.fakeObj,
                     mentions: participants.map(a => a.id)
@@ -1030,9 +1030,9 @@ case 'tag': case 'tagall': case 'all':{
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 if (args[0] === 'close') {
-                    await Maria.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`*_SUCCESSFULLY CLOSED THE GRUP_\n\ngrup has been closed for the time being 😽*`)).catch((err) => reply(json(err)))
+                    await Maria.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`_GURUP SOHBETİ KAPATILDI_\n\n*Sadece yöneticiler mesaj gönderebilir* 😽`)).catch((err) => reply(json(err)))
                 } else if (args[0] === 'open') {
-                    await Maria.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`*THE GROUP HAS BEEN OPENED SUCCESSFULLY*`)).catch((err) => reply(json(err)))
+                    await Maria.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`*GRUP SOHBETİ AÇILDI*`)).catch((err) => reply(json(err)))
                 } else {
                     reply(`Mode ${command}\n\n\nType ${prefix + command}open/close`)
                 }
@@ -1042,9 +1042,9 @@ case 'tag': case 'tagall': case 'all':{
                 if (!isAdmins && !isGroupOwner && !isCreator) return reply(mess.admin)
                 if (!isBotAdmins) return reply(mess.botAdmin)
                 if (args[0] === 'open') {
-                    await Maria.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Successfully Opened Group Edit Info 🕊️`)).catch((err) => reply(json(err)))
+                    await Maria.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Artık herkes Grup bilgisini düzenleyebilir 🕊️`)).catch((err) => reply(json(err)))
                 } else if (args[0] === 'close') {
-                    await Maria.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Closed Group Edit Info🕊️`)).catch((err) => reply(json(err)))
+                    await Maria.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`artık Grup bilgisini sadece yöneticiler düzenleyebilir🕊️`)).catch((err) => reply(json(err)))
                 } else {
                     reply(`Mode ${command}\n\n\nType ${prefix + command}on/off`)
                 }
@@ -1058,7 +1058,7 @@ case 'tag': case 'tagall': case 'all':{
           let response = await Maria.groupInviteCode(m.chat);
           Maria.sendText(
             m.sender,
-            ` 🤖𝐵𝑜𝑡 𝑛𝑎𝑚𝑒:- Maria Bot\n\n🔖𝐺𝑟𝑜𝑢𝑝 𝑛𝑎𝑚𝑒:- ${groupMetadata.subject}\n\n🔰𝐺𝑟𝑜𝑢𝑝 𝑙𝑖𝑛𝑘:- https://chat.whatsapp.com/${response}`,
+            ` 🤖BOT ADI:- Alpha Bot\n\n🔖GRUP ADI:- ${groupMetadata.subject}\n\n🔰GRUP LİNKİ:- https://chat.whatsapp.com/${response}`,
             m,
             { detectLink: true }
           );
